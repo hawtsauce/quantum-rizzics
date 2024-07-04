@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Space Grotesk", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eef7f8;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    margin-top: 60px;
+    height: 540px;
+    width: 1400px;
+    color: white;
+    background: radial-gradient(263px at 100.2% 3%, rgb(12, 85, 141) 31.1%, rgb(205, 181, 93) 36.4%, rgb(244, 102, 90) 50.9%, rgb(199, 206, 187) 60.7%, rgb(249, 140, 69) 72.5%, rgb(12, 73, 116) 72.6%);
+    padding: 10px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Title and content */
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 820px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.title p {
+    margin-top: 20px;
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+}
+
+.results {
+    margin-top: 30px;
+}
+
+.gen-btn {
+    text-decoration: none;
+    color: white;
+    background-color: #0066ff;
+    margin-top: 25px;
+    padding: 7px 16px;
+    border-radius: 6px;
+    font-size: 18px;
+}
+
+.gen-btn i {
+    margin-right: 10px;
+}
+
+.gen-btn:hover {
+    background-color: #065bda;
+    transition: 0.3s;
+}
+
+.result-rizz {
+    background: #eeeeee;
+    color: black;
+    padding: 12px;
+    font-size: 17px;
+    margin-top: 6px;
+    border-radius: 6px;
+}
+
+.result-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    gap: 20px;
+}
+
+.result-action a {
+    color: white;
+    text-decoration: none;
+}
+
+.votes {
+    display: flex;
+    align-items: center;
+    background: none;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.copy {
+    background: #0066ff;
+    padding: 7px 30px;
+    border-radius: 6px;
+}
+
+.copy i {
+    margin-right: 10px;
+}
+
+.copy:hover {
+    background-color: #065bda;
+    transition: 0.3s;
+}
+
+.vote-count {
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 28px;
+}
+
+
+.faq-item {
+    width: 1000px;
+    margin-top: 25px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #a9a9a9; 
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8a8a8a; 
+}
+
+footer {
+    margin-top: 30px;
+}
+
+@media (max-width: 1180px){
+	.hero {
+		width: 900px;
+	}
+	
+	.hero p {
+		width: 700px;
+	}
+}
+
+@media (max-width: 950px){
+	.hero {
+		width: 800px;
+	}
+}
+
+@media (max-width: 830px) {
+    .hero {
+        width: 720px;
+        justify-content: center; 
+        align-items: center; 
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+    .hero p {
+        width: 570px;
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+}
+
+
+@media (max-width: 750px){
+	.hero {
+		width: 400px;
+	}
+	
+	.hero p {
+		width: 320px;
+	}
+	.desc {
+		display: none;
+	}
+	
+	.hero h1 {
+		width: 400px;
+	}
+    footer{
+        margin-top: 12px;
+    }
+}
+
+@media (max-width: 450px){
+	.hero {
+		width: 300px;
+	}
+	.hero p {
+		width: 250px;
+	}
+	.copy i {
+		display: none;
+	}
+	footer {
+		width: 280px;
+		text-align: center;
+	}
+	h1 {
+		font-size: 30px;
+	}
+	h2 {
+		font-size: 25px;
+	}
+}
+
+
+.copy-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+    align-items: center;
+    gap: 10px;
+}
+
+.copy-popup.show {
+    display: flex;
+}
+
+.source-code {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.source-code a {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.source-code i {
+    font-size: 1.2em;
+}
